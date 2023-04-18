@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   .main {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    image-orientation: flip;
+   }
+   .banner {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    padding-left: 120px;
+    padding-right: 280px;
+    font-family: Arial;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 25px;
+   }
+   
+   .main h2 {
+    color: white;
+    font-size: xx-large;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5%;
+   } 
+   .copyright {
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-left: 50px;
+   }
+   a {
+    text-decoration: none;
+   }
+   .container1, .container2{
+    border: .25em black solid;
+    margin-bottom: .5em;
+  
+    }
+    
+    .container1 .row1, .col1{
+    display: inline-block;
+    height: 140px;
+    width: 370px;
+    padding: 30px;
+    border: .25em brown double;
+ }
+    .responsive{
+        max-width: auto;
+        max-height:auto;
+    }
+
+    .container2 .row2,.col2{
+    display: inline-block;
+    height: 140px;
+    width: 370px;
+    border: .25em brown double;
+    overflow-y: scroll;
+    }
+    
+   @media screen and (max-width:1366px){
+    body{
+        background-color:black;
+        
+    }
+   @media screen and (max-width:768px){
+    body{
+        background-color:green;
+        
+    }
+   }
+   @media screen and (max-width:460px){
+    body{
+        background-color:aqua;
+    }
+   }
+   }
+
+ 

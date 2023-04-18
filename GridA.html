@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            border: .50em black double;
+            margin: 0 auto;
+            gap: 15px 15px;
+            grid-template-areas: 'head head head head head head'
+                'side main main main main side2'
+                'last last last last last last'
+        }
+
+        article,
+        header,
+        aside,
+        footer {
+            border: .25em red solid;
+            text-align: center;
+        }
+
+        header {
+            grid-area: head;
+            background: radial-gradient(red, yellow, green);
+        }
+
+        aside {
+            grid-area: side;
+            background: conic-gradient(red, yellow, green);
+        }
+
+        article {
+            grid-area: main;
+            background: conic-gradient(red, yellow, green);
+
+        }
+
+        .side2 {
+            grid-area: side2;
+            border: .25em red solid;
+            text-align: center;
+            background: conic-gradient(red, yellow, green);
+        }
+
+        footer {
+            position:0px;
+            background: linear-gradient(yellow, red);
+            grid-area: last;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>This is grid style apge.</h1>
+        </header>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nobis repellat et consequuntur
+            ipsum. Enim aliquid accusamus aut deserunt porro voluptates maiores explicabo vitae, quam eaque ab impedit
+            voluptatum, commodi amet minus, optio esse? Tempore exercitationem deserunt aliquid rerum eligendi suscipit
+            odit, reprehenderit nemo minima, ducimus, magnam debitis mollitia.
+        </aside>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, rerum amet iusto eius nisi
+            harum qui sunt expedita, ipsa sapiente, iure suscipit laboriosam sed doloremque autem? Illo delectus,
+            repellendus, molestias tenetur harum sequi unde enim vel pariatur iure, quisquam nobis esse facere sint
+            nihil. Quisquam, voluptates? Reiciendis, ab corporis. Laborum pariatur voluptate totam sapiente ad omnis
+            distinctio odit sunt aut reprehenderit voluptates nisi tempore, porro ipsa, nostrum fuga perferendis nulla
+            possimus eum. Odit repudiandae pariatur sit dignissimos magnam accusamus atque sunt sequi cum, eos soluta
+            voluptatem delectus tenetur deserunt earum voluptas non incidunt ad quas doloremque nulla quidem ipsum
+            porro. Repellendus optio hic minus? Magni corporis, perspiciatis ut voluptate inventore itaque quibusdam
+            architecto unde quas, doloremque eligendi odit delectus sit dolor nihil nobis neque quae repellendus?
+            Officiis optio quae ullam quis atque aut sunt eum. Provident totam porro quos atque repudiandae velit labore
+            consequuntur. Omnis quo soluta possimus delectus beatae reprehenderit ratione minus iste molestiae
+            architecto nulla, dignissimos ab quos ea sed aut asperiores sit numquam. Architecto, aliquam nemo possimus
+            velit officiis cupiditate ad, quos quam voluptas blanditiis sapiente commodi, repellendus illum deserunt?
+            Iure eaque, vero neque cumque eveniet debitis recusandae assumenda voluptatibus, fuga deleniti incidunt
+            perferendis unde eius!
+        </article>
+        <div class="side2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis aperiam velit sed sint quo ab quaerat,
+            porro, quidem natus optio quis. Magnam veniam rem fugiat, officia aperiam quod, eum nesciunt ducimus iusto
+            commodi, numquam nulla dicta molestiae nemo repellat perferendis dolorum ullam aut impedit distinctio
+            provident? Provident, illo nemo?
+        </div>
+        <footer>
+            <h1>This is the end</h1>
+        </footer>
+    </div>
+</body>
+
+</html>

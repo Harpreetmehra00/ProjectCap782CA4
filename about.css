@@ -1,0 +1,231 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    padding-left: 50px;
+    padding-right: 350px;
+    font-family: Arial;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 25px;
+    width: 100%;
+    position: relative;
+   
+}
+
+.main h2 {
+    color: white;
+    font-size: xx-large;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 5%;
+}
+
+.copyright {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 100%;
+    max-width: 100%;
+    bottom: -25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    position: absolute;
+    border: .25em red solid;
+    margin-bottom: .5em;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1cm;
+    height: calc(100%-140px);
+}
+
+.container1 .row1 {
+    height: 140px;
+    width: 100%;
+    max-width: 90%;
+    border: .25em brown double;
+   
+}
+
+.col1 {
+    height: 140px;
+    width: 100%;
+    max-width: 90%;
+    border: .25em brown double;
+    right: 0;
+}
+
+.responsive {
+    position: absolute;
+    /* margin: auto; */
+    width: 100%;
+    max-width: 43.5%;
+    padding: 0;
+    margin: 0;
+}
+
+.container2 {
+    position: absolute;
+    border: 0.25em green solid;
+    margin-bottom: 0.5em;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container2 .row2,
+.col2 {
+    height: 140px;
+    width: 100%;
+    max-width: 90%;
+    border: .25em brown double;
+    overflow: auto;
+}
+
+@media screen and (max-width:1366px) {
+    body {
+        background-color: black;
+        color: white;
+
+    }
+
+    @media screen and (max-width:880px) {
+        .banner h1 {
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            padding-left: 50px;
+            padding-right: 340px;
+            font-family: Arial;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width:1088px) {
+        body {
+            background-color: rgb(28, 0, 128);
+
+        }
+        .banner h1{
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            padding-left: 50px;
+            padding-right: 350px;
+            font-family: Arial;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 20px;
+    
+        }
+    }
+
+    @media screen and (max-width:784px) {
+        body {
+            background-color: aqua;
+        }
+        .banner h1 {
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            padding-left: 50px;
+            padding-right: 350px;
+            font-family: Arial;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 25px;
+        }
+    }
+    @media screen and (max-width:564px) {
+        body {
+            background-color: rgb(255, 251, 0);
+        }
+        .banner h1 {
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            padding-left: 50px;
+            padding-right: 350px;
+            font-family: Arial;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 25px;
+        }
+    }
+}
+.footer{
+    background: rgb(81, 98, 122);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    height:3rem;
+    width:3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: white;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+  background-color:var(--main-color); 
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap:1rem;
+}
+.footer .links a{
+    padding: .7rem 2rem;
+    color:#fff;
+    border: var(--border);
+    font-size: 1.2rem;
+}
+.footer .links a:hover{
+    background:var(--main-color);
+
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: var(--main-color);
+}
+
